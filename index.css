@@ -1,0 +1,197 @@
+
+    :root {
+      --primary: #c7a4e0; /* lilac */
+      --secondary: #f6d6eb; /* light pink */
+      --dark: #2f2f2f;
+      --light: #ffffff;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, var(--secondary), var(--light));
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+header p {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--light);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 30px rgba(200, 162, 200, 0.4);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.skills span {
+  display: inline-block;
+  background: var(--secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.faith {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--primary);
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+button {
+  background: var(--primary);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.lilac-animated-img{
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    object-fit: fill;
+    opacity: 0;
+
+   animation:
+     slideFadeIn 1.6s ease forwards,
+     float 4.5s ease-in-out infinite,
+     glow 3s ease-in-out infinite;
+
+   animation-delay:0s, 1.6s, 1.6s;
+}
+
+  /* Slide + Fade In */
+   @keyframes slideFadeIn {
+     from {
+      opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating motion */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Lilac glow */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 8px rgba(200, 162, 200, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(200, 162, 200, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(200, 162, 200, 0.4);
+  }
+}
+ 
+
+.dsktp-img{
+   border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.frontpic-img{
+  border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.ceb-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
