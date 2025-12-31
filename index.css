@@ -129,8 +129,8 @@ button:hover {
 
 .lilac-animated-img{
     border-radius: 50%;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     padding-left: 100px;
     margin-bottom: 50px;
     object-fit: fill;
@@ -195,3 +195,4 @@ button:hover {
     width: 200px;
     height: 200px;
 }
+
